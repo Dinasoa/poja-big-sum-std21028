@@ -1,0 +1,10 @@
+config:
+  target: 'https://6hq61j3zp4.execute-api.eu-west-3.amazonaws.com/Prod'
+
+scenarios:
+  - flow:
+      - get:
+          url: '/ping'
+      - think: 1000
+    arrivalRate: 10
+    duration: 60
